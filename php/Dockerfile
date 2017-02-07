@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y curl \
   vim \ 
   php
 
-RUN mkdir -p /intercom
+RUN mkdir -p /intercom/mount_dir
 WORKDIR /intercom
 RUN curl -sS https://getcomposer.org/installer | php 
 

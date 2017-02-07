@@ -16,7 +16,7 @@ RUN curl -O https://storage.googleapis.com/golang/go1.6.3.linux-amd64.tar.gz;\
 ENV PATH="/usr/local/go/bin:${PATH}" 
 WORKDIR /go_workspace 
 ENV GOPATH=/go_workspace 
-RUN mkdir -p src/intercom/code;\
+RUN mkdir -p src/intercom/code/mount_dir;\
   go get gopkg.in/intercom/intercom-go.v2
 WORKDIR src/intercom/code
 RUN git clone https://github.com/intercom/example-go.git 
