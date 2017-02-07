@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
 # Configure the main working directory. This is the base 
 # directory used in any further RUN, COPY, and ENTRYPOINT 
 # commands.
-RUN mkdir -p /intercom
+RUN mkdir -p /intercom/mount_dir
 WORKDIR /intercom
 
 RUN git clone https://github.com/intercom/example-ruby.git && mv -t . example-ruby/Gemfile* 
