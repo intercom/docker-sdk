@@ -15,7 +15,7 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node && npm install intercom-client \
   gulp-babel \
   babel-preset-es2015
   
-RUN mkdir -p /intercom
+RUN mkdir -p /intercom/mount_dir
 WORKDIR /intercom
 
 RUN git clone https://github.com/intercom/example-node.git
